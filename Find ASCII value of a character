@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.Scanner;
+public class AsciiVal{
+  static void AsciiVal(char ch){
+    int val=(int)ch;
+    System.out.println("The Ascii value of "+ch+" character is : "+val);
+  }
+  public static void main(String[] args){
+  Scanner sc=new Scanner(System.in);
+  char ch=sc.next().charAt(0);
+  AsciiVal(ch);
+  }
+}
+  
