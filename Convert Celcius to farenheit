@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.Scanner;
+public class Main{   
+    static double CelToFaren(int celcius){
+        double faren=(double)((celcius*(1.8))+32);
+        return faren;
+    }
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the celcius degree : ");
+		int celcius=sc.nextInt();
+		double res=CelToFaren(celcius);
+		System.out.println("The farenheit degree : "+res);
+	}
+}
