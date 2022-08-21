@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.Scanner;
+public class Main
+{   
+    static String FindRoots(double a,double b,double c)
+    {   
+        double det=b*b-4*a*c;
+        double x1=-b/(2*a);
+        double x2=(Math.sqrt(Math.abs(det))/(2*a));
+        double r1,r2;
+        if(det>0)
+        {
+            r1=x1+x2;
+            r2=x1-x2;
+            return "The roots are " + r1 + " and " + r2 +", which are real and different.";
+        }
+        else if(det==0)
+        {
+            r1=x1;
+            return "The roots are " + r1 + " and " + r1 +", which are real and equal.";
+        }   
+    return "r1 = "+x1+"+i"+x2+", r2 = "+x1+"-i"+x2+", which are complex and different.";
+    }
+        
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the co-efficients of Quadratic equation : ");
+		double a=sc.nextDouble();
+		double b=sc.nextDouble();
+		double c=sc.nextDouble();
+		System.out.println(FindRoots(a,b,c));
+	}
+}
