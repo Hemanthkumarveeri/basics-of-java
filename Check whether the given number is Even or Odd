@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.Scanner;
-public class EvenOdd
+public class Main
 {   
     String EvenOrOdd(int n)
     {
@@ -14,7 +14,7 @@ public class EvenOdd
 	    Scanner sc=new Scanner(System.in);
 	    System.out.println("Enter the Integer : ");
 	    int a=sc.nextInt();
-	    EvenOdd obj=new EvenOdd();
+	    Main obj=new Main();
 	    String res=obj.EvenOrOdd(a);
 	    System.out.println(a+" is an "+res+" number");
 	}
