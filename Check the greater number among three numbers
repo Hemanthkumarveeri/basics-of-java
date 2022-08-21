@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.Scanner;
+public class Main
+{   
+    static String GreaterNo(int n1,int n2,int n3)
+    {
+        if(n1>n2&&n1>n3){
+            return n1+" is greater number";
+        }
+        else if(n2>n3){
+            return n2+" is greater number";
+        }
+        return n3+" is greater number";
+    }
+        
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Numbers : ");
+		int n1=sc.nextInt();
+		int n2=sc.nextInt();
+		int n3=sc.nextInt();
+		System.out.println(GreatestNo(n1,n2,n3));
+	}
+}
