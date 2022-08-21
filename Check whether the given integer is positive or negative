@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.Scanner;
+public class Main
+{   
+    static String isPositive(int n)
+    {
+        if(n==0){
+            return n+" is neither positive nor negative number";
+        }
+        if(n>0){
+            return n+" is positive number";
+        }
+        return n+" is negative number";
+    }
+        
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Integer : ");
+		int a=sc.nextInt();
+		System.out.println(isPositive(a));
+	}
+}
